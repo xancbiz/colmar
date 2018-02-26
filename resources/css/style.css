@@ -1,0 +1,564 @@
+
+/* Universal Styles */
+
+html {
+    font-size: 18px;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1rem;
+    background-color: white;
+}
+
+.container {
+  max-width: 1050px;
+  margin: auto;
+}
+
+@media only screen and (max-width: 480px) {
+  .container {
+    width: 100%;
+  }
+}
+
+h1 {
+  font-size: 2.15rem;
+  color: #383838;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.9rem;
+  color: #383838;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 1.25rem;
+  color: #383838;
+  font-weight: 500;
+  line-height: 1.45rem;
+}
+
+h6 {
+  font-size: 1.10rem;
+  color: #383838;
+  font-weight: 500;
+}
+
+p {
+  font-weight: 400;
+  font-size: .8rem;
+  line-height: 1.1rem;
+  color: gray;
+}
+
+span {
+  font-size: .75rem;
+  color: #383838;
+  line-height: .95rem;
+}
+
+/* Header */
+
+header {
+
+  background-color: white;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 2.75rem;
+    padding-left: 24px;
+}
+
+.colmar {
+    font-size: 1rem;
+    font-weight: 700;
+    color: black;
+    line-height: normal;
+
+}
+
+.academy {
+    font-size: 1rem;
+    font-weight: 400;
+    color: gray;
+    line-height: normal;
+
+}
+
+
+header nav ul {
+  display: flex;
+  padding-right: 16px;
+  color: #383838;
+  font-size: 1rem;
+  cursor: auto;
+  text-decoration: none;
+}
+
+header nav ul li{
+  padding-right: 16px;
+}
+
+
+.mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 480px) {
+
+  .desktop {
+    display: none;
+  }
+
+.logo{
+  display: none;
+}
+
+
+  nav.mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+}
+
+
+/* Learn Something Everyday Section */
+
+
+  .main-banner {
+    background-color: #d6d4d4;
+    margin: 0 auto;
+  }
+
+  .main-banner .container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+  .left-section {
+    width: 60%;
+    padding: 32px 24px;
+  }
+
+  .left-section img {
+    width: 100%;
+  }
+
+  .right-section {
+    width: 440px;
+  }
+
+  .banner-content{
+    height: auto;
+    padding-left: 20px;
+    margin-right: 60px;
+    margin-top: 6rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .banner-content h3 {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+
+  .button {
+    background-color: #383838;
+    color: white;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+ .button:hover {
+    background-color: #808080;
+  }
+
+ .button:active {
+    background-color: #808080;
+  }
+
+  @media only screen and (max-width: 480px) {
+    .main-banner .container {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .main-banner .left-section {
+      width: 100%;
+      padding: 0px 0px;
+    }
+
+    .right-section {
+      width: 100%;
+    }
+
+    .banner-content {
+      margin: 32px 24px;
+      padding-left: 0px;
+      align-items: center;
+    }
+
+    .banner-content .button {
+      width: 80%;
+  background-color: #808080;
+    }
+  }
+
+/* Infomation SEction */
+
+#information-section {
+  display: flex;
+  justify-content: space-between;
+  }
+
+  .left-section h2 {
+    padding-top: 32px;
+  }
+
+  .left-section p {
+    padding: 24px 24px 24px 0px;
+  }
+
+  .content {
+    padding: 16px 1px 16px 0px;
+    width: 100%;
+  }
+
+  .content p {
+    padding-top: 8px;
+  }
+
+  .content a {
+    color: #4ba3f4;
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+    padding-top: .9rem;
+  }
+
+#information-section .right-section{
+  border-left: 1px solid #DCDCDC;
+  padding: 16px 0px 32px 0px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.small-info{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.small-info img.desktop {
+  width: 35%;
+  padding: 16px;
+}
+
+.small-info img.mobile {
+  display: none;
+}
+
+.campus {
+  border-top: 1px solid #DCDCDC;
+  border-bottom: 1px solid #DCDCDC;
+}
+
+.guest {
+  background-color: #DCDCDC;
+}
+
+
+@media only screen and (max-width: 480px) {
+  #information-section .left-section {
+    display: none;
+  }
+
+  #information-section .right-section {
+    border-left: 0px;
+    padding: 16px 16px 32px 16px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .guest {
+    background-color: white;
+  }
+
+  .campus {
+    border-top: 0px;
+    border-bottom: 0px;
+    margin: 16px 0px;
+  }
+
+  .small-info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .small-info img.desktop {
+    display: none;
+  }
+
+  .small-info img.mobile {
+    display: flex;
+    width: 100%;
+  }
+
+  .content {
+    padding: 0px;
+    width: 100%;
+    margin-top: 16px;
+  }
+}
+
+
+/* Courses Section */
+
+#courses-section{
+  background-color: #F5F5F5;
+  padding-bottom: 32px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.headline {
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.course-grid{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.course {
+  background-color: white;
+  width: 32%;
+  height: 16rem;
+  margin-bottom: 20px;
+}
+
+.course img {
+  width: 100%;
+}
+
+.course h3 {
+  padding-bottom: 1rem;
+}
+
+.course p {
+  padding-top: .55rem;
+}
+
+.course-content {
+  padding: 16px 16px 24px 16px;
+}
+
+.course-content span {
+  color: gray;
+}
+
+@media only screen and (max-width: 480px) {
+  #courses-section {
+    border-top: 1px solid #DCDCDC;
+    border-bottom: 1px solid #DCDCDC;
+    background-color: white;
+  }
+
+  #courses-section .container {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .course-grid {
+    display: none;
+  }
+
+  .courses-list {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+.courses-list a {
+    background-color: #DCDCDC;
+    color: #383838;
+    text-decoration: none;
+    padding: 16px;
+    margin-bottom: 8px;
+    font-size: 1.4rem;
+  }
+
+}
+
+
+/*Thesis Section */
+
+#thesis-section .headline {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-section video {
+  width: 100%;
+  object-fit: fill;
+}
+
+.thesis h3 {
+  padding-top: 24px;
+}
+
+.thesis p {
+  padding-top: 8px;
+
+}
+
+.thesis .small-thesis img {
+  width: 35%;
+  padding: 16px;
+}
+
+
+.small-thesis {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.thesis .fisma {
+    margin-top: 32px;
+    background-color: #DCDCDC;
+}
+
+@media only screen and (max-width: 480px) {
+  .flex .right-section {
+    display: none;
+  }
+
+  .flex .left-section {
+    width: 100%;
+    padding: 0px;
+  }
+
+
+  .flex .left-section p {
+    display: none;
+  }
+
+  .flex .left-section h3 {
+    display: none;
+  }
+}
+
+
+
+/* Footer */
+
+footer {
+  border-top: 1px solid #DCDCDC;
+  background-color: white;
+  height: 3.5rem;
+}
+
+footer p {
+  padding-left: 24px;
+  padding-right: 24px;
+  color: #383838;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: .75rem;
+}
+
+
+.footer-nav a {
+  display: inline-block;
+  padding-right: 16px;
+  color: #383838;
+  font-size: .75rem;
+  cursor: auto;
+  text-decoration: none;
+}
+
+.footer-nav a:hover {
+  color: #808080;
+}
+
+.footer-nav a:active {
+  color: #808080;
+}
+
+@media only screen and (max-width: 480px) {
+  footer {
+    border-top: 0px;
+  }
+
+  footer .container {
+    margin-top: 24px;
+  }
+
+  footer .footer-nav {
+    display: none;
+  }
+
+  footer p {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
